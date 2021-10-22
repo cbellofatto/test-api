@@ -20,11 +20,7 @@ router.get("/", (req, res) => {
 router.get("/:piece_name", (req, res) => {
 	const piece_name = req.params.piece_name;
 	var piece = chessPieces.find(obj => obj.name === piece_name)
-	if(piece = undefined){
-		return res.json({ message: "Piece not found"})
-	}else{
-		res.json(piece);	
-	};
-	
+	if(piece = "undefined") return res.json({ message: "Piece not found"});
+	return res.json(piece);
 });
 module.exports = router;

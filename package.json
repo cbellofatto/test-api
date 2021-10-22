@@ -1,12 +1,24 @@
 {
   "name": "test-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing out an API",
   "main": "server.js",
   "scripts": {
-    "run": "node server.js"
+    "run": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Christian Bellofatto",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbellofatto/test-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cbellofatto/test-api/issues"
+  },
+  "homepage": "https://github.com/cbellofatto/test-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
